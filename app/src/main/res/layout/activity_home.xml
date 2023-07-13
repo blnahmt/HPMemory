@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+
+    <Button
+        android:id="@+id/btnTek"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="486dp"
+        android:background="@drawable/tek_play_btn"
+        android:elevation="0px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnİki"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/iki_play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTek" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnİki" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="99dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="Zorluk seçiniz"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:checked="true"
+            android:paddingLeft="12px"
+            android:paddingRight="32px"
+            android:text="2x2"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:paddingLeft="12px"
+            android:paddingRight="32px"
+            android:text="4x4"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:paddingLeft="12px"
+            android:paddingRight="32px"
+            android:text="6x6"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonVolume"
+        android:layout_height="wrap_content"
+        android:text="Sesi Kapat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSignOut"
+        tools:layout_editor_absoluteY="626dp"  android:layout_width="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
